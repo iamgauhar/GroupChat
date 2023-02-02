@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #f8f8f8;
+  font-family: "Noto Sans", sans-serif;
+}
+
+.chat_area {
+  width: 800px;
+  min-width: 90%;
+  background: #fff;
+  border: 1px solid #ff5e0e;
+}
+
+.app-name {
+  padding: 8px 16px;
+  background: #f1f1f1;
+  display: flex;
+  align-items: center;
+  background: #ffa273d0;
+  color: #313030;
+  gap: 1rem;
+}
+
+.logo {
+  border: 1px solid #ff5e0e;
+  background: #f1f1f1;
+  border-radius: 50%;
+  padding: 4px;
+}
+
+.message-area {
+  height: 500px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  padding-top: 40px;
+}
+.message-area::-webkit-scrollbar {
+  width: 4px;
+  background: #f1eeee;
+}
+.message-area::-webkit-scrollbar-thumb {
+  /* width: 4px; */
+  background: #fabe7a;
+}
+.message-area::-webkit-scrollbar-thumb:hover {
+  width: 4px;
+  background: #ff961e;
+}
+
+#textarea {
+  width: 100%;
+  border: 0;
+  padding: 20px;
+  font-size: 16px;
+  outline: none;
+  background: #fbfbfb;
+  background: #fad1bc;
+}
+
+.message {
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  width: fit-content;
+  max-width: 300px;
+  position: relative;
+  /* font-size: 16px; */
+}
+
+.incoming {
+  background: #fc6316;
+  color: #fff;
+}
+.outgoing {
+  background: #f37c40;
+  color: #fff;
+  margin-left: auto;
+}
+
+.message > h4 {
+  position: absolute;
+  top: -20px;
+  left: 0;
+  font-size: 14px;
+  color: #333;
+}
+
+.message > p {
+  font-size: 18px;
+}
+
+button {
+  cursor: pointer;
+  font-weight: 700;
+  font-family: Helvetica, "sans-serif";
+  transition: all 0.2s;
+  padding: 10px 20px;
+  /* border-radius: 100px; */
+  background: #0eff9b;
+  border: 1px solid transparent;
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+}
+
+button:hover {
+  background: #19ff79;
+}
+
+button > svg {
+  width: 34px;
+  margin-left: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+button:hover svg {
+  transform: translateX(5px);
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+#sendmsg {
+  display: flex;
+}
