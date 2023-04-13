@@ -47,14 +47,17 @@ body {
   overflow-y: auto;
   padding-top: 40px;
 }
+
 .message-area::-webkit-scrollbar {
-  width: 4px;
+  width: 0px;
   background: #f1eeee;
 }
+
 .message-area::-webkit-scrollbar-thumb {
   /* width: 4px; */
   background: #fabe7a;
 }
+
 .message-area::-webkit-scrollbar-thumb:hover {
   width: 4px;
   background: #ff961e;
@@ -84,13 +87,14 @@ body {
   background: #fc6316;
   color: #fff;
 }
+
 .outgoing {
   background: #f37c40;
   color: #fff;
   margin-left: auto;
 }
 
-.message > h4 {
+.message>h4 {
   position: absolute;
   top: -20px;
   left: 0;
@@ -98,7 +102,7 @@ body {
   color: #333;
 }
 
-.message > p {
+.message>p {
   font-size: 18px;
 }
 
@@ -120,7 +124,7 @@ button:hover {
   background: #19ff79;
 }
 
-button > svg {
+button>svg {
   width: 34px;
   margin-left: 10px;
   transition: transform 0.3s ease-in-out;
@@ -136,4 +140,21 @@ button:active {
 
 #sendmsg {
   display: flex;
+}
+
+@media screen and (max-width: 786px) {
+  body {}
+
+  .chat_area {
+    height: 100vh;
+  }
+
+  #sendmsg {
+    position: absolute;
+    bottom: 0;
+  }
+
+  #sendBtn>span {
+    display: none;
+  }
 }
