@@ -5,6 +5,8 @@ do {
   username = prompt("Please Enter Your Name: ");
 } while (!username);
 
+sendMessage(`< ${username} > has joined the chat`);
+
 document.querySelector("#user").innerHTML = username;
 document.getElementById("sendBtn").addEventListener("click", () => {
   let mymsg = document.querySelector("#textarea").value;
