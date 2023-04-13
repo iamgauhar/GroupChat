@@ -10,7 +10,7 @@ Group chat is a chatting web application where multiple user can chat real time 
 
 
 # Workflow of this web application.
-This site is not hosted yet so i'm running on localhost you can also run by typing command in your terminal "npm run server".so first go to http://localhost:8090/ It will redirect you to login/signin page
+This site is not hosted yet so i'm running on localhost you can also run by typing command in your terminal "npm run server".so first go to https://group-chat-qa2c.onrender.com/ It will redirect you to login/signin page
 
 
 
